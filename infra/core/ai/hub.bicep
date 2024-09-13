@@ -73,7 +73,7 @@ resource hub 'Microsoft.MachineLearningServices/workspaces@2024-04-01' = {
   The ApiVersion specified in the metadata is for the Azure Cognitive Services version (that wraps the OpenAPI call)
  */
 
-  resource openAiConnection 'connections@2024-04-01-preview' = { // NN:TODO Add @version to ensure resource is correctly versioned
+  resource openAiConnection 'connections@2024-07-01-preview' = { // NN:TODO Add @version to ensure resource is correctly versioned
     name: 'aoai-connection'
     properties: {
       category: 'AzureOpenAI'
